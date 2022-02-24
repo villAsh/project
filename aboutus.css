@@ -1,7 +1,11 @@
 body{
     padding: 0;
     margin: 0;
+    margin-top: 50px;
     box-sizing: border-box;
+}
+.navbar-dark{
+    background-color: #512DA8 !important;
 }
  .jumbotron{
      background-color:  rgb(168, 129, 212) !important;
@@ -10,3 +14,4 @@ body{
     background-color:  rgb(195, 162, 233) !important;
 
  }
+ 

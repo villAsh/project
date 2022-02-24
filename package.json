@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/villAsh/Bootstrap-repo/issues"
   },
-  "homepage": "https://github.com/villAsh/Bootstrap-repo#readme"
+  "homepage": "https://github.com/villAsh/Bootstrap-repo#readme",
+  "dependencies": {
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0"
+  }
 }
