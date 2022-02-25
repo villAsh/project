@@ -1,8 +1,10 @@
 body{
     padding: 0;
     margin: 0;
-
     box-sizing: border-box;
+}
+.navbar{
+    margin-bottom: 0 !important;
 }
 .navbar-dark{
     background-color: #512DA8 !important;
