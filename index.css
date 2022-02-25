@@ -8,14 +8,16 @@ body{
 }
 .navbar{
     margin-bottom: 0 !important;
+    border-radius: 0 !important;
 }
 .jumbotron{
     background-color: #9f89d3 !important;
     margin-top: 0 !important;
+    border-radius:  0 !important;
 }
-.text-light h1{
+.text-dark h1{
     font-size: 5rem !important;
 }
-.text-light p{
+.text-dark p{
     font-size: 2.5rem !important;
 }

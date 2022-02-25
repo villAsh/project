@@ -10,10 +10,21 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,10 +36,10 @@
             <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -49,7 +60,7 @@
 
     <div class="container">
         <div class="row">
-            <ol class="col-12 breadcrumb">
+            <ol class="col-12 breadcrumb bg-dark">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active">Contact Us</li>
             </ol>
@@ -79,7 +90,11 @@
                 <h5>Map of our Location</h5>
             </div>
             <div class="col-12 col-sm-11 offset-sm-1">
-                Button group goes here
+                <div class="btn-group" role="group">
+                    <a href="tel:+85212345678" class="btn btn-primary" role="button"><i class="fa fa-phone"></i> Call</a>
+                    <a href="" class="btn btn-info" role="button"><i class="fa fa-skype"></i> Skype</a>
+                    <a href="mailto:confusion@food.com" class="btn btn-success" role="button"><i class="fa fa-envelope-o"></i>  Email</a>
+                </div>
             </div>
         </div>
 
@@ -88,7 +103,57 @@
               <h3>Send us your Feedback</h3>
            </div>
             <div class="col-12 col-md-9">
-                Form goes here
+                <form action="GET">
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" name="firstname" id="firstname" class="form-control"
+                            placeholder="First Name" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" name="lastname" id="lastname" class="form-control"
+                            placeholder="Last Name" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telephone" class="col-12 col-md-2 col-form-label">Telephone</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" name="areacpde" id="areacode" class="form-control"
+                            placeholder="areacode" >
+                        </div>
+                        <div class="col-7 col-md-7">
+                            <input type="tel" name="telephone" id="telephone" class="form-control"
+                            placeholder="Tel" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class=" col-md-2 col-form-label">E-mail</label>
+                        <div class=" col-md-10">
+                            <input type="email" name="email" id="email" class="form-control"
+                            placeholder="E-mail" >
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input"
+                                name="approve" id="approve" value=" ">
+                                <label for="approve" class="form-check-label">
+                                    <strong>May We Contact you ?</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3 offset-md-1">
+                            <select class="form-control" name="" id="">
+                                <option>Telephone</option>
+                                <option>E-mail</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
             </div>
              <div class="col-12 col-md">
             </div>
