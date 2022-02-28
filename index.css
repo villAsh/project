@@ -16,8 +16,12 @@ body{
     border-radius:  0 !important;
 }
 .text-dark h1{
-    font-size: 5rem !important;
+    font-size: 4.5rem !important;
 }
 .text-dark p{
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
+    margin-right: 100px;
+}
+.row-content{
+    margin-top: 100px !important;
 }
