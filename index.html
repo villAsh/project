@@ -55,8 +55,11 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm align-self-center mb-5">
                     <img src="./img/logo.png" alt="restro logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <button class="button btn-lg bg-warning border-0 rounded pl-5 pr-5" id="reservetable" type="button">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -91,14 +94,20 @@
             </div>
         </div>
         <div class="row row-content align-items-center mt-5">
-            <div class="col-12 col-sm-4 order-sm-fist col-md-4">
+            <div class="col-12 col-sm-3 order-sm-fist col-md-3">
                 <h3>This Month's promotion</h3>
             </div>
-            <div class="col-12 col-sm-8 order-sm-last col-md-8">
-                <h2>Weekends Grand Buffet</h2>
-                <p class="d-none d-sm-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo temporibus
-                    molestiae voluptatum beatae aliquid repellat ullam, doloremque ut quis, quia veniam inventore!
-                    Tenetur placeat, in at officia exercitationem dicta omnis. </p>
+            <div class="col-12 col-sm-8 order-sm-2 col-md-8">
+                <div class="media">
+                    <img src="./img/buffet.png" alt="buffet" class="order-sm-last d-flex img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2>Weekends Grand Buffet <span class="badge badge-danger bg-danger">New</span></h2>
+                        <p class="d-none d-sm-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo temporibus
+                            molestiae voluptatum beatae aliquid repellat ullam, doloremque ut quis, quia veniam inventore!
+                            Tenetur placeat, in at officia exercitationem dicta omnis. </p>
+                    </div>
+                </div>
+               
             </div>
         </div>
         <div class="row row-content align-items-center mt-5">
@@ -119,6 +128,80 @@
             </div>
         </div>
     </div>
+    <div class="container bg danger">
+        <div class="row row-content">
+            <div class="col-6 align-items-center">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead bg-warning text-light">
+                            <tr>
+                                <th colspan="2">Reserve Table</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Number of Guests</td>
+                                <td class="space-arounds">
+                                    <input type="radio" name="countguest">1
+                                    <input type="radio" name="countguest">2
+                                    <input type="radio" name="countguest">3
+                                    <input type="radio" name="countguest">4
+                                    <input type="radio" name="countguest">5
+                                    <input type="radio" name="countguest">6
+                                </td>
+                            </tr>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+                      <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                      <i class="fa fa-envelope fa-lg"></i>: 
+                      <a href="mailto:confusion@food.net">confusion@food.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+           </div>
+        </div>
+    </footer>
 </body>
 
 </html>

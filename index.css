@@ -16,6 +16,15 @@ body{
     border-radius:  0 !important;
     
 }
+h2{
+    color: #000 !important;
+    font-size: 3.5rem !important;
+    font-weight: bold !important;
+}
+h3{
+    color: #000 !important;
+    font-size: 3rem !important;
+}
 .text-dark h1{
     font-size: 4.5rem !important;
     color: #000 !important;
@@ -27,4 +36,9 @@ body{
 }
 .row-content{
     margin-top: 100px !important;
+}
+footer{
+    background-color: #9f89d3 !important;
+    margin-top: 100px;
+    padding-top: 100px;
 }
