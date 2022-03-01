@@ -14,11 +14,14 @@ body{
     background-color: #9f89d3 !important;
     margin-top: 0 !important;
     border-radius:  0 !important;
+    
 }
 .text-dark h1{
     font-size: 4.5rem !important;
+    color: #000 !important;
 }
 .text-dark p{
+    color: #000 !important;
     font-size: 2rem !important;
     margin-right: 100px;
 }
