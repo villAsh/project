@@ -25,6 +25,10 @@ h3{
     color: #000 !important;
     font-size: 3rem !important;
 }
+h5{
+    color: #000 !important;
+    font-size: 2.2rem !important;
+}
 .text-dark h1{
     font-size: 4.5rem !important;
     color: #000 !important;
@@ -36,6 +40,9 @@ h3{
 }
 .row-content{
     margin-top: 100px !important;
+}
+table th{
+    font-size: 2.4rem !important;
 }
 footer{
     background-color: #9f89d3 !important;

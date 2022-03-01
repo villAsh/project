@@ -59,7 +59,7 @@
                     <img src="./img/logo.png" alt="restro logo" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <button class="button btn-lg bg-warning border-0 rounded pl-5 pr-5" id="reservetable" type="button">Reserve Table</button>
+                    <a href="#table"> <button class="button btn-lg bg-warning border-0 rounded pl-5 pr-5" id="reservetable" type="button"> Reserve Table</button></a>
                 </div>
             </div>
         </div>
@@ -127,33 +127,70 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container bg danger">
-        <div class="row row-content">
-            <div class="col-6 align-items-center">
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead class="thead bg-warning text-light">
-                            <tr>
-                                <th colspan="2">Reserve Table</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Number of Guests</td>
-                                <td class="space-arounds">
-                                    <input type="radio" name="countguest">1
-                                    <input type="radio" name="countguest">2
-                                    <input type="radio" name="countguest">3
-                                    <input type="radio" name="countguest">4
-                                    <input type="radio" name="countguest">5
-                                    <input type="radio" name="countguest">6
-                                </td>
-                            </tr>
-                            <tr>
-                            </tr>
-                        </tbody>
-                    </table>
+        <div class="container" id="table">
+            <div class="row row-content">
+                <div class="col-12 col-sm-10">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive ml-auto">
+                                <table class="table">
+                                    <thead class="bg-warning text-light">
+                                        <th>Reserve Table</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <form action="GET">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-5">
+                                                            <label for="label" class="mr-5">Numbers of Guest</label>
+                                                        </div>
+                                                      <div class="col-12 col-md-7">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">2</label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">3</label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">4</label>
+                                                          </div>
+                                                          <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                            <label class="form-check-label" for="inlineRadio1">5</label>
+                                                          </div>
+                                                      </div>
+                                                              <div class="mt-5 col-12 col-sm-3">
+                                                                 <label for="datetime">Date and Time</label>
+                                                                 </div>
+                                                                 <div class="co-12 col-md-7 mt-5">
+                                                                 <div class="form-check form-check-inline col-12">
+                                                                    <input type="number" name="date" id="datetime" placeholder="Date">
+                                                                    <input type="number" name="time" id="datetime" placeholder="Time">
+                                                                </div>
+                                                                
+                                                              </div>
+                                                              <div class=" ml-auto mt-5 col-12 col-md-7">
+                                                              <button class="btn btn-primary text-light">Reserve</button>
+                                                              </div>
+                                                    </div>
+                                     
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
         </div>
