@@ -1,0 +1,19 @@
+body{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+h3{
+    font-size: 3.9rem !important;
+    font-weight: 700;
+    font-family: sans-serif,monospace;
+}
+p{
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+}
+.nav-tabs li a{
+     font-size: 17px;
+}

@@ -49,3 +49,10 @@ footer{
     margin-top: 100px;
     padding-top: 100px;
 }
+.tab-content{
+    border-right: 1px solid  #ddd;
+    border-bottom: 1px solid  #ddd;
+    border-left: 1px solid  #ddd;
+    box-shadow: 5px 9px 12px rgb(65, 63, 63);
+    padding: 30px;
+}
