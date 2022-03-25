@@ -10,14 +10,27 @@ body{
     margin-bottom: 0 !important;
     border-radius: 0 !important;
 }
+.navbar .navbar-nav li{
+    padding-left: 8px;
+    padding-top: 10px;
+}
+.navbar .navbar-collapse .navbar-text{
+    float: right;
+}
 .jumbotron{
     background-color: #9f89d3 !important;
     margin-top: 0 !important;
     border-radius:  0 !important;
     
 }
+.jumbotron .row-header a
+{
+    text-decoration: none;
+}
+
+
 h2{
-    color: #000 !important;
+    color: #333 !important;
     font-size: 3.5rem !important;
     font-weight: bold !important;
 }
@@ -29,12 +42,18 @@ h5{
     color: #000 !important;
     font-size: 2.2rem !important;
 }
+.row-header h1{
+    color: #ddd !important;
+}
+.row-header p{
+    color: #ddd !important;
+}
 .text-dark h1{
     font-size: 4.5rem !important;
-    color: #000 !important;
+    color: #ddd !important;
 }
 .text-dark p{
-    color: #000 !important;
+    color: #ddd !important;
     font-size: 2rem !important;
     margin-right: 100px;
 }
