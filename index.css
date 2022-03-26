@@ -30,7 +30,7 @@ body{
 
 
 h2{
-    color: #333 !important;
+    color: #000 !important;
     font-size: 3.5rem !important;
     font-weight: bold !important;
 }
@@ -74,4 +74,23 @@ footer{
     border-left: 1px solid  #ddd;
     box-shadow: 5px 9px 12px rgb(65, 63, 63);
     padding: 30px;
+}
+.carousel{
+    background-color: #512DA8;
+}
+.carousel-item{
+    height: 300px;
+}
+.carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+
+}
+.carousel-caption{
+    margin: 0 0 50px 90px;
+}
+ol li{
+    padding: 0 10px;
 }
