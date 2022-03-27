@@ -94,3 +94,8 @@ footer{
 ol li{
     padding: 0 10px;
 }
+#carouselButton{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
