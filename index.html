@@ -45,7 +45,7 @@
                             </span></a></li>
                 </ul>
                 <span class="navbar-text h3">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a>
                         <span class="fa fa-sign-in"> </span> Login
                     </a>
                 </span>
@@ -60,7 +60,7 @@
                     <h4 class="modal-title">
                         Login
                     </h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close">
                         &times;
                     </button>
                 </div>
@@ -116,7 +116,7 @@
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <a href="#table"> <button class="btn-block btn-lg bg-warning border-0 rounded nav-link"
-                            id="reservetable2" type="button" data-toggle="modal" data-target="#reservetable"> Reserve
+                            id="reservetable2" type="button" data-toggle="modal" > Reserve
                             Table</button></a>
                 </div>
             </div>
@@ -129,7 +129,7 @@
                     <h2 class="modal-title">
                         Reserve Table
                     </h2>
-                    <button class="close" type="button" data-dismiss="modal">
+                    <button class="close" type="button" >
                         &times;
                     </button>
                 </div>
@@ -396,7 +396,23 @@
         </div>
     </footer>
     <script>
+
         $(document).ready(function () {
+            //modal
+            
+        $('.navbar-text').on('click',function(){
+            $('#loginModal').modal('show');
+        } );
+        
+        $('#reservetable2').on('click',function(){
+                $('#reservetable').modal('show');
+        });
+        $('.close').on('click',function(){
+            $('#reservetable').modal('hide');
+            $('#loginModal').modal('hide');
+        });
+
+            //corousel
             $('#mycarousel').carousel({ interval: 200 });
             $('#carouselButton').click(function () {
                 if ($('#carouselButton').children('span').hasClass('fa-pause')) {
