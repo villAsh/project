@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <title>Ristorante Con Fusion: About Us</title>
-    <!-- Required meta tags always come first -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ristorante Con fusion</title>
-
-    <!-- Bootstrap CSS -->
+    <title>Ristorante Con Fusion: About Us</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -22,44 +16,83 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-
-    <style>
-       
-    </style>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
 </head>
-
 <body>
     <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
-        <div class="container"> 
-            <a class="navbar-brand mr-auto" href="#"><img src="./img/logo.png" alt="navbar-logo" height="30" width="40"></a>
+        <div class="container">
+            <a class="navbar-brand mr-auto" href="#"><img src="./img/logo.png" alt="navbar-logo" height="30" width="40">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav"> 
-                    <li class="nav-item"><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg"> Home</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"> About</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"> Menu</span></a></li>
-                    <li class="nav-item active"><a class="nav-link" href="contactus.html"><span class="faf fa-phone fa-lg"> Contact </span></a></li>
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a class="nav-link" href="index.html"><span class="fa fa-home fa-lg">
+                                Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg">
+                                About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"> Menu</span></a>
+                    </li>
+                    <li class="nav-item active"><a class="nav-link" href="contactus2.html"><span class="faf fa-phone fa-lg">
+                                Contact
+                            </span></a></li>
                 </ul>
+                <span class="navbar-text h3">
+                    <a>
+                        <span class="fa fa-sign-in"> </span> Login
+                    </a>
+                </span>
             </div>
-           
         </div>
     </nav>
+    <div class="modal fade mt-1" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Login
+                    </h4>
+                    <button type="button" class="close">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="GET">
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="username" class="sr-only"></label>
+                                <input type="text" name="username" id="name" placeholder="Username"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="password" class="sr-only"></label>
+                                <input type="password" name="password" id="pass" placeholder="password"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary btn-sm ml-1">Login </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6 ">
+                <div class="col-12 col-sm-6 text-dark">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
-              
-                  </div>
-                  <div class="col-12 col-sm-3 align-self-center">
+                </div>
+                <div class="col-12 col-sm align-self-center mb-5">
                     <img src="./img/logo.png" alt="restro logo" class="img-fluid">
                 </div>
             </div>
@@ -148,13 +181,13 @@
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input"
                                 name="approve" id="approve" value=" ">
-                                <label for="approve" class="form-check-label">
+                                <label for="approve" class="form-check-label pl-4">
                                     <strong>May We Contact you ?</strong>
                                 </label>
                             </div>
                         </div>
                         <div class="col-md-3 offset-md-1">
-                            <select class="form-control" name="" id="">
+                            <select class="form-control" name="contact" id="">
                                 <option>Telephone</option>
                                 <option>E-mail</option>
                             </select>
@@ -199,7 +232,7 @@
                         <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                         <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                        <a class="btn btn-social-icon btn-dropbox" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
            </div>
@@ -210,10 +243,21 @@
            </div>
         </div>
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+               $(document).ready(function () {
+             //modal
+            
+        $('.navbar-text').on('click',function(){
+            $('#loginModal').modal('show');
+        } );
+        
+        $('.close').on('click',function(){
+            $('#loginModal').modal('hide');
+        });
+    });
+    </script>
 </body>
-
 </html>
