@@ -15,7 +15,8 @@ body{
     padding-top: 10px;
 }
 .navbar .navbar-collapse .navbar-text{
-    float: right;
+    position: absolute;
+    right: 50px;
 }
 .jumbotron{
     background-color: #9f89d3 !important;
@@ -110,4 +111,16 @@ ol li{
     background-color: #9575CD;
     color: #ddd;
   }
-  
+  @media (min-width: 360px) and (max-width: 580px) {
+    .navbar .navbar-collapse{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .navbar .navbar-collapse .navbar-text{
+       position: absolute;
+       top: 250px;
+       right: 210px;
+    }
+  }
