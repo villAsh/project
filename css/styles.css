@@ -111,6 +111,11 @@ ol li{
     background-color: #9575CD;
     color: #ddd;
   }
+  .dropdown-menu{
+      background-color:  #9f89d3 !important;
+      border-radius: 10px !important;
+      border: 3px solid #512DA8 !important;
+  }
   @media (min-width: 360px) and (max-width: 580px) {
     .navbar .navbar-collapse{
         display: flex;
