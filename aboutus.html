@@ -21,6 +21,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="aboutus.css">
+    <script src="./JsFiles/modal.js"></script>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-social/bootstrap-social.css">
@@ -118,7 +119,7 @@
         <div class="row">
             <div class="col-12 col-sm-7">
                 <ol class="breadcrumb container bg-dark">
-                    <li class="breadcrumb-item  text-primary">Home </li>
+                    <li class="breadcrumb-item  text-primary"> <a href="index.html"> Home </a></li>
                     <li class="breadcrumb-item active"> About Us </li>
                 </ol>
                 <h3 class="mb-5">About Us</h3>
@@ -373,17 +374,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function () {
-      //modal
-     
- $('.navbar-text').on('click',function(){
-     $('#loginModal').modal('show');
- } );
- 
- $('.close').on('click',function(){
-     $('#loginModal').modal('hide');
- });
-});
+    
 </script>
 </body>
 

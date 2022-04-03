@@ -116,16 +116,5 @@ ol li{
       border-radius: 10px !important;
       border: 3px solid #512DA8 !important;
   }
-  @media (min-width: 360px) and (max-width: 580px) {
-    .navbar .navbar-collapse{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 50px;
-    }
-    .navbar .navbar-collapse .navbar-text{
-       position: absolute;
-       top: 250px;
-       right: 210px;
-    }
-  }
+  
+  

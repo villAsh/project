@@ -1,0 +1,11 @@
+.north{
+    border-bottom: 1px solid #333 ;
+    box-shadow: 0 2px 7px 1px #333;
+}
+.north h2{
+    font-size: 32px !important;
+    font-family:  Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif !important;
+}
+.card img{
+    height: 430px !important;
+}
