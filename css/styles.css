@@ -32,12 +32,12 @@ body{
 
 h2{
     color: #000 !important;
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
     font-weight: bold !important;
 }
 h3{
     color: #000 !important;
-    font-size: 3rem !important;
+    font-size: 2rem !important;
 }
 h5{
     color: #000 !important;
@@ -50,7 +50,7 @@ h5{
     color: #ddd !important;
 }
 .text-dark h1{
-    font-size: 4.5rem !important;
+    font-size: 3rem !important;
     color: #ddd !important;
 }
 .text-dark p{
