@@ -21,7 +21,8 @@ body{
     border-radius: 25px;
     color: #f0f0f0;
     box-shadow: 5px 5px 10px #ccc;
-    background: linear-gradient(150deg, #43a0f7, hsl(257, 100%, 79%) 100%);
+    background: linear-gradient(150deg, #FF7E5F, #FEB47B 100%) !important;
+
 }
  h3{
     font-size: 2.7em !important;
